@@ -1,0 +1,107 @@
+.team { 
+    min-height: 100vh;
+    background-color: #4c4c4c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%233d3d3d' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%232e2e2e' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%231e1e1e' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230f0f0f' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23000000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+
+    .coach {
+        width: 90%;
+        margin: 50px auto;
+        background-image: url("../images/classesbg2.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        border-radius: 2px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        overflow: hidden;
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 5px 15px;
+        border: 2px solid black;
+
+        .main-coach {
+            margin: 50px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 20px;
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+            h5 {
+                font-size: 2em;
+                font-weight: 300;
+            }
+
+            h6 {
+                padding: 20px 0;
+                font-weight: 600;
+                font-size: 1.2em;
+            }
+
+            .socials {
+                font-size: 3em;
+
+                h6 { 
+                    font-weight: 300;
+                    font-size: 0.5em;
+
+                }
+
+                svg {
+                    margin: 0 10px;
+                    transition: .3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: drop-shadow(rgba(0, 0, 0, 0.481) 0px 10px 10px);
+                    }
+                }
+            }
+        }
+
+        .trainer-profile {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .coach {
+        width: 90%;
+
+        .main-coach {
+            margin: 50px;
+            min-width: 90%;
+            gap: 20px;
+
+            p{ 
+                width: 90%;
+                text-align: left;
+            }
+        }
+
+        .trainer-profile {
+            display: none;
+            img {
+                display: none;
+            }
+        }
+    }
+}

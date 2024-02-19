@@ -1,0 +1,133 @@
+.classes { 
+    min-height: 100vh;
+    background-color: #4c4c4c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%233d3d3d' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%232e2e2e' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%231e1e1e' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230f0f0f' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23000000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+
+    .heading {
+        padding: 20px;
+    }
+
+    .classes-container {
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: 90%;
+        margin: auto;
+
+        .main-class {
+            box-shadow: rgba(255, 255, 255, 0.3) 0px 5px 15px;
+            padding: 50px;
+            width: 45%;
+            background-image: url("../images/classesbg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            border: 2px solid black;
+
+            .first-section {
+                font-size: 3em;
+                h5 {
+                    font-weight: 300;
+                }
+            }
+
+            .second-section {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                svg {
+                    font-size: 1.5em;
+                }
+            }
+
+            .third-section {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        .secondary-classes {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .class {
+                box-shadow: rgba(255, 255, 255, 0.3) 0px 5px 15px;
+                padding: 25px;
+                height: 49%;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                border: 2px solid black;
+                background-image: url("../images/classesbg2.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: bottom;
+
+                .first-section {
+                    font-size: 2.5em;
+                    h5 {
+                        font-weight: 300;
+                    }
+                }
+    
+                .second-section {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    font-size: 2em;
+                    font-weight: 300;
+                }
+                
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .classes { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 20px;
+
+        .heading {
+            padding: 20px;
+        }
+
+        .class {
+            width: 90vw;
+        }
+
+        .classes-container {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .main-class {
+                width: auto;
+
+                .third-section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

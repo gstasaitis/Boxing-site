@@ -1,0 +1,128 @@
+.signup {
+    height: 100vh;
+    background-color: #000000;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .signup-main {
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../images/singupbg.png");
+        background-size: cover;
+        margin-top: 75px;
+
+        .signup-form{
+            width: 60%;
+            margin: auto;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            background-image: url("../images/classesbg2.jpg");
+            background-size: cover;
+            background-position: bottom;
+
+
+            form{ 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: auto;
+                align-items: center;
+
+                .form-labels {
+                    padding: 55px;
+                    
+                    label {
+                        padding: 25px;
+
+                        input {
+                            text-align: center;
+                            margin: auto;
+                            padding: 5px 25px;
+                            font-size: 1.3em;
+                            background: none;
+                            border: none;
+                            border-bottom: 2px solid black;
+
+                            &:focus {
+                                border: none;
+                                outline: none;
+                                border-bottom: 2px solid black;
+                                color: black;
+
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .heading {
+        text-align: center;
+    }
+    .signup { 
+        .signup-main {
+            background-position: center;
+        }
+
+        .signup-form {
+            width: 100% !important;
+            height: 550px !important;
+
+            .form-labels {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+
+            form {
+                margin: 55px 0px;
+            }
+            
+            input {
+                padding: 30px 25px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .heading {
+        text-align: center;
+    }
+    .signup { 
+        .signup-main {
+            background-position: center;
+        }
+
+        .signup-form {
+            height: auto !important;
+            padding: 20px;
+
+            .form-labels {
+                display: flex;
+                flex-direction: column;
+                margin: 10px !important;
+                padding: 0 !important;
+            }
+
+            form {
+                margin: 55px 0px;
+            }
+            
+            input {
+                padding: 30px 25px !important;
+            }
+        }
+    }
+}
