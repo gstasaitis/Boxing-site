@@ -71,10 +71,10 @@
             display: flex;
             justify-content: end;
             align-items: end;
-
-            img {
-                width: 100%;
-            }
+            background-image: url("../images/trainer2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60%;
         }
 
     }
