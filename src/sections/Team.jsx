@@ -35,7 +35,7 @@ const Team = () => {
                     <button className="button-48" role="button"><span className="text">Contact trainer</span></button>
             </div>
                 <div className="trainer-profile">
-                    <img src="src\images\trainer2.png" alt="trainer" srcSet="" />
+                    <img src="..\images\trainer2.png" alt="trainer" srcSet="" />
                 </div>
         </div>
     </div>
